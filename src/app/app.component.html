@@ -1,6 +1,11 @@
 <div class="overlay">
-  <span class="result"> {{ calc }} </span>
+  <img
+    src="https://c.tenor.com/_4YgA77ExHEAAAAM/rick-roll.gif"
+    class="rr"
+    id="rr"
+  />
   <p>Calculator</p>
+  <span class="result"> {{ calc }} </span>
   <div
     *ngFor="let item of calcbuttons; let i = index"
     class="maindivcalculator"
@@ -10,47 +15,5 @@
     </button>
   </div>
 </div>
-<!-- <tr *ngFor="let item of calcbuttons; let i = index">
-    <button class="btn-n" (click)="click(item)" *ngIf="i % 4 == 0">
-      {{ item.label }}
-    </button>
-  </tr> -->
-<!-- <tr>
-  <td *ngFor="let item of calcbuttons; let i = index">
-  <button class="btn-n" (click)="click(item)" *ngIf="i  4">
-    {{ item.label }}
-  </button>
-</td>
-</tr> -->
-
-<span></span>
-
-<!-- <tr>
-    <button class="btn-oc" (click)="clear()">C</button>
-    <button class="btn-oc" (click)="clearL()">CE</button>
-  </tr>
-
-  <tr>
-    <button class="btn-n" (click)="c(7)">7</button>
-    <button class="btn-n" (click)="c(8)">8</button>
-    <button class="btn-n" (click)="c(9)">9</button>
-    <button class="btn-o" (click)="cO(S)">-</button>
-  </tr>
-  <tr>
-    <button class="btn-n" (click)="c(4)">4</button>
-    <button class="btn-n" (click)="c(5)">5</button>
-    <button class="btn-n" (click)="c(6)">6</button>
-    <button class="btn-o" (click)="cO(M)">*</button>
-  </tr>
-  <tr>
-    <button class="btn-n" (click)="c(1)">1</button>
-    <button class="btn-n" (click)="c(2)">2</button>
-    <button class="btn-n" (click)="c(3)">3</button>
-    <button class="btn-o" (click)="cO(A)">+</button>
-  </tr>
-  <tr>
-    <button class="btn-o" (click)="cO(do)">.</button>
-    <button class="btn-n" (click)="c(0)">0</button>
-    <button class="btn-o" (click)="calculate()">=</button>
-    <button class="btn-o" (click)="cO(D)">/</button>
-  </tr> -->
+<button class="btn-clear" (click)="clearL()">CE</button>
+<button class="btn-clear" (click)="clear()">C</button>

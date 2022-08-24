@@ -35,7 +35,8 @@ export class AppComponent {
 
   c(num: Number) {
     this.calc = this.calc + num;
-    if (this.calc == '187') {
+    if (this.calc == '00187') {
+      document.getElementById('rr').style.visibility = 'visible';
     }
   }
 
@@ -65,6 +66,7 @@ export class AppComponent {
   }
   clear() {
     this.calc = '';
+    document.getElementById('rr').style.visibility = 'hidden';
   }
   clearL() {
     this.calc = this.calc.slice(0, -1);
