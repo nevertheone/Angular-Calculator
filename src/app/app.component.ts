@@ -35,6 +35,8 @@ export class AppComponent {
 
   c(num: Number) {
     this.calc = this.calc + num;
+    if (this.calc == '187') {
+    }
   }
 
   cO(operator: string) {

@@ -1,17 +1,21 @@
-<p>Calculator</p>
-<span class="result"> {{ calc }} </span>
-<table>
-  <tr *ngFor="let item of calcbuttons; let i = index">
-    <button class="btn-n" (click)="click(item)" *ngIf="i%4 == 0" >
+<div class="overlay">
+  <span class="result"> {{ calc }} </span>
+  <p>Calculator</p>
+  <div
+    *ngFor="let item of calcbuttons; let i = index"
+    class="maindivcalculator"
+  >
+    <button class="btn-n" (click)="click(item)">
       {{ item.label }}
     </button>
-  </tr>
-  <tr *ngFor="let item of calcbuttons; let i = index">
-  <button class="btn-n" (click)="click(item)" *ngIf="i%4 == 0" >
-    {{ item.label }}
-  </button>
-</tr>
-  <!-- <tr>
+  </div>
+</div>
+<!-- <tr *ngFor="let item of calcbuttons; let i = index">
+    <button class="btn-n" (click)="click(item)" *ngIf="i % 4 == 0">
+      {{ item.label }}
+    </button>
+  </tr> -->
+<!-- <tr>
   <td *ngFor="let item of calcbuttons; let i = index">
   <button class="btn-n" (click)="click(item)" *ngIf="i  4">
     {{ item.label }}
@@ -19,9 +23,9 @@
 </td>
 </tr> -->
 
-  <span></span>
+<span></span>
 
-  <!-- <tr>
+<!-- <tr>
     <button class="btn-oc" (click)="clear()">C</button>
     <button class="btn-oc" (click)="clearL()">CE</button>
   </tr>
@@ -50,4 +54,3 @@
     <button class="btn-o" (click)="calculate()">=</button>
     <button class="btn-o" (click)="cO(D)">/</button>
   </tr> -->
-</table>

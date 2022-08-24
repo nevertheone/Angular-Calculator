@@ -1,5 +1,12 @@
 p {
-  font-family: Lato;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.overlay {
+  width: 300px;
+  text-align: center;
+}
+.maindivcalculator {
+  width: 300px;
 }
 .btn-n {
   outline: 0;
