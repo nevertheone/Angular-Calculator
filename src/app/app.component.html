@@ -6,14 +6,16 @@
   />
   <p>Calculator</p>
   <span class="result"> {{ calc }} </span>
-  <div
-    *ngFor="let item of calcbuttons; let i = index"
-    class="maindivcalculator"
-  >
-    <button class="btn-n" (click)="click(item)">
-      {{ item.label }}
-    </button>
+  <div class="btns">
+    <div
+      *ngFor="let item of calcbuttons; let i = index"
+      class="maindivcalculator"
+    >
+      <button class="btn-n" (click)="click(item)">
+        {{ item.label }}
+      </button>
+    </div>
   </div>
+  <button class="btn-clear" (click)="clearL()">CE</button>
+  <button class="btn-clear" (click)="clear()">C</button>
 </div>
-<button class="btn-clear" (click)="clearL()">CE</button>
-<button class="btn-clear" (click)="clear()">C</button>

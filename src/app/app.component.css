@@ -1,13 +1,15 @@
 p {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.btns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .overlay {
-  width: 300px;
   text-align: center;
 }
-.maindivcalculator {
-  width: 300px;
-}
+
 .btn-n {
   outline: 0;
   position: relative;
