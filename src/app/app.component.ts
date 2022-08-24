@@ -106,7 +106,12 @@ export class AppComponent {
   click(item: Calcitems) {
     switch (item.type) {
       case Enumtype.Operator:
-        this.cO(item.label);
+        if (item.label == '=') {
+          this.calculate();
+        } else {
+          this.cO(item.label);
+        }
+
         break;
       case Enumtype.Number:
         this.c(parseInt(item.label));
