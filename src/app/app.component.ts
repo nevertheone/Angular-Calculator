@@ -38,6 +38,7 @@ export class AppComponent {
     if (this.calc == '00187') {
       document.getElementById('rr').style.visibility = 'visible';
     }
+    document.createElement('span').classList.add('ripple');
   }
 
   cO(operator: string) {
@@ -124,6 +125,7 @@ export class AppComponent {
         this.calculate();
     }
   }
+  
 }
 
 interface Calcitems {
@@ -136,3 +138,4 @@ enum Enumtype {
   Operator = 'Operator',
   Result = 'Result',
 }
+
